@@ -1,0 +1,16 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment
+.env
+
+# macOS
+.DS_Store
+
+# MovieLens datasets
+data/raw/
+data/samples/

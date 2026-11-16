@@ -1,0 +1,1 @@
+"""MovieRec backend application package."""
