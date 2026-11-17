@@ -5,7 +5,7 @@ import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routers import movies, ratings, recommendations, system, users
+from app.routers import movies, provisional, ratings, recommendations, system, users
 
 app = FastAPI(
     title="MovieRec API",
@@ -38,6 +38,7 @@ app.include_router(movies.router, prefix="/api")
 app.include_router(users.router, prefix="/api")
 app.include_router(ratings.router, prefix="/api")
 app.include_router(recommendations.router, prefix="/api")
+app.include_router(provisional.router, prefix="/api")
 
 
 @app.get("/", tags=["system"], summary="API welcome")
